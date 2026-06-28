@@ -1,20 +1,12 @@
----
-title: "Project Overview"
-# subtitle: "[Project Name]"
-date: last-modified
-# author: ""
-format: html
----
-
 ```{=html}
 <!-- 
-  Lab Notebook Overview Template
+  Lab Notebook Overview Component
   Structure based on Booth et al. (2016), The Craft of Research, 4th ed.
   Sections follow the book's progression: Interest → Topic → Questions → Significance → Problem → Hypothesis → Sources
 -->
 ```
 
-## Research Interest
+### Research Interest
 
 ::: {.callout-note collapse="true" title="What is a research interest?"}
 A research interest is the raw starting material for a project. This is the thing you're curious about *before* you've scoped, focused, or formalized it. It is deliberately pre-academic. You are not making a claim, asking a question, or proposing a study. You are identifying the **itch**. The fascination. The puzzle. The nagging observation that makes you want to know more.
@@ -30,7 +22,7 @@ The book's framing: "a research topic is an interest stated specifically enough 
 
 <!-- Write your research interest here -->
 
-## Broad Research Topic
+### Broad Research Topic
 
 ::: {.callout-note collapse="true" title="What is a broad research topic?"}
 A broad research topic takes your interest and names a domain of inquiry. The goal is to have a broad topicbut it is still too wide to guide productive research. At this stage, you can state your topic in four or five words: "division of labor in ants," "the evolution of cooperation," "gene regulation in development." The book warns that a topic this broad will "intimidate you with the task of finding, much less reading, even a fraction of the sources available."
@@ -44,7 +36,7 @@ The purpose of writing it down explicitly is diagnostic: if your topic is this b
 
 <!-- Write your broad topic here -->
 
-## Focused Research Topic
+### Focused Research Topic
 
 ::: {.callout-note collapse="true" title="What is a focused research topic?"}
 You narrow a broad topic into a focused one by adding words derived from **verbs that express actions or relationships**: *conflict*, *influence*, *cause*, *contribute*, *change*, *develop*, *shape*, *constrain*. A static topic ("caste determination in ants") becomes a focused one when it contains dynamic, relational language ("the *influence* of queen presence on larval developmental *trajectories* during the 3rd-instar commitment window in *Temnothorax*").
@@ -64,12 +56,12 @@ The book's key test: **restate your focused topic as a full sentence.** If that 
 
 <!-- Write your focused topic here -->
 
-## Research Questions
+### Research Questions
 
 ::: {.callout-note collapse="true" title="How to generate and evaluate research questions"}
 The best way to begin working on a focused topic is **not** to find all the information you can, but to formulate questions that direct you to just the information you need. Without a specific question worth asking, you cannot offer a specific answer worth supporting, and without an answer to support, you cannot select from all available data just those relevant to your case.
 
-### Systematic question generation
+#### Systematic question generation
 
 Ask questions across these categories (the point is to stimulate thinking, not to keep the categories straight):
 
@@ -80,7 +72,7 @@ Ask questions across these categories (the point is to stimulate thinking, not t
 - **Speculative / Counterfactual:** What if this didn't exist? What if it were placed in a new context? How would things be different?
 - **Source-driven questions:** Build on agreement — can you extend a source's claim to new cases, support it with new evidence, or apply an analogous analysis? Build on disagreement — does a source mistake a causal relationship, oversimplify a category, or ignore a perspective?
 
-### Evaluating questions
+#### Evaluating questions
 
 Not all questions are equally good. Avoid questions whose answers are:
 
@@ -95,7 +87,7 @@ Look for questions whose answers would make you think about the topic in a **new
 
 <!-- Write your research questions here -->
 
-## Significance ("So What?")
+### Significance ("So What?")
 
 ::: {.callout-note collapse="true" title="Why this is the pivotal section"}
 This is the most important section in the overview — and the hardest to fill in. Once you have a question that holds your interest, you must pose a tougher one about it: **So what?** Beyond your own interest in its answer, why would others think it a question worth asking?
@@ -125,7 +117,7 @@ Think of it this way: *What will be lost if you don't answer your question?* How
 
 **Step 3 — Significance:** ... in order to help my reader understand ...
 
-## Problem Structure
+### Problem Structure
 
 ::: {.callout-note collapse="true" title="Transforming a question into a research problem"}
 A question becomes a research *problem* when you can articulate not just what you don't know, but what **consequence** that ignorance has — what larger, more important question you can't answer because of this gap. The book defines every problem as having two parts:
@@ -139,7 +131,7 @@ For conceptual/academic problems, both the condition and the consequence are abs
 
 The two questions must relate in two ways: (a) the answer to Q1 helps answer Q2, and (b) Q2 is more important than Q1.
 
-### Practical vs. Conceptual problems
+#### Practical vs. Conceptual problems
 
 Most academic research addresses **conceptual problems** — the "cost" is a gap in understanding, not a tangible harm in the world. If your research also has practical implications, the book advises: formulate the project as pure research first (Steps 1–3 addressing understanding), then add practical application as an **optional Step 4**. Don't artificially bolt practical significance onto conceptual work to make it seem more important — readers will see through it. The book provides a test:
 
@@ -147,7 +139,7 @@ Most academic research addresses **conceptual problems** — the "cost" is a gap
 
 If the answer is "probably not," the practical connection is a stretch. Present your conceptual significance honestly and save the practical application for your conclusion.
 
-### Finding problems
+#### Finding problems
 
 - **In your sources:** Look for contradictions, inconsistencies, incomplete explanations, and unsupported assumptions. Many journal articles end with paragraphs about open questions and ideas for further research — carve out a piece of one.
 - **In your own drafts:** Your best thinking often appears in the last pages you write. If you arrive at an unanticipated claim, ask yourself what question it might answer — you may have solved a problem you haven't yet posed.
@@ -164,7 +156,7 @@ If the answer is "probably not," the practical connection is a stretch. Present 
 
 **If applied — Step 4 (Practical application):**
 
-## Working Hypothesis / Elevator Story
+### Working Hypothesis / Elevator Story
 
 ::: {.callout-note collapse="true" title="Why you need a working answer before you have all the evidence"}
 The book describes an "elevator story" — a short summary of your project that you could give someone on the way to a meeting. It should include: (1) your research question, (2) your best guess at an answer, and (3) the kind of evidence you expect to use to support it.
@@ -184,12 +176,12 @@ The book is explicit that research is not a linear march from question to answer
 
 <!-- Write your working hypothesis / elevator story here -->
 
-## Sources & Problem-Finding
+### Sources & Problem-Finding
 
 ::: {.callout-note collapse="true" title="How to engage sources at the overview stage"}
 At this stage, you are **not** conducting a comprehensive literature review. You are reading to accomplish two things: (1) find and refine your research problem, and (2) identify the kinds of evidence your readers will expect.
 
-### Three kinds of sources
+#### Three kinds of sources
 
 - **Primary sources:** The "raw data" or evidence you will use to develop, test, and justify your claim. In behavioral ecology, these are your own observations, experimental results, datasets. What counts as primary varies by field.
 - **Secondary sources:** Peer-reviewed books and articles based on primary sources, intended for scholarly audiences. These constitute the **conversation** you are joining. The book warns: if you cite only tertiary sources in a scholarly argument, "you will mark yourself as either a novice or an outsider."
@@ -197,7 +189,7 @@ At this stage, you are **not** conducting a comprehensive literature review. You
 
 **Important:** These categories are relative to your project. A journal article is normally a secondary source, but it becomes primary if your research concerns the author, the field's methods, or its intellectual history.
 
-### Reading for a problem
+#### Reading for a problem
 
 Don't read randomly — read deliberately to find problems. Look for:
 
@@ -206,18 +198,18 @@ Don't read randomly — read deliberately to find problems. Look for:
 
 The book lists specific "moves" for finding disagreements: contradictions of kind (it's not that type of thing), part-whole contradictions (that's not how the parts relate), developmental contradictions (that's not how it changes over time), causal contradictions (that's not what causes it), and contradictions of perspective (a different framework reveals something new).
 
-### Evaluating sources
+#### Evaluating sources
 
 Key criteria: Is it peer-reviewed? Is the author reputable in the field? Is it current by your field's standards? Does it have notes and a bibliography? Has it been frequently cited? For any source on a contested topic, check who funded it.
 
-### Following trails
+#### Following trails
 
 Use **bibliographic trails** (follow citations backward from a useful source) and **citation indexing** (follow citations forward — who has cited this source since it was published?). The combination builds a network of sources far more efficiently than keyword searching alone.
 
 *(Booth et al. 2016, §5.1–5.4, §6.3)*
 :::
 
-### Key sources identified so far
+#### Key sources identified so far
 
 <!-- Use this space to track sources that are shaping your problem, not as an exhaustive bibliography -->
 
@@ -227,6 +219,6 @@ Use **bibliographic trails** (follow citations backward from a useful source) an
 |        |      |                       |
 |        |      |                       |
 
-### Open questions from your reading
+#### Open questions from your reading
 
 <!-- What contradictions, gaps, or incomplete explanations have you found? -->
