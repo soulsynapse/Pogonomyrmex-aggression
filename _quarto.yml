@@ -2,11 +2,6 @@ project:
   type: website
   output-dir: _site
 
-  # Don't re-execute notebooks unless their source changes.
-  # Critical when you have long-running CV or simulation code.
-  # Run `quarto render --execute` to force a full re-run.
-  freeze: auto
-
 website:
   title: "AntSciHub"
   description: "SIRG Lab Notebooks & Research"
@@ -78,6 +73,11 @@ format:
     link-external-newwindow: true
 
 execute:
+  # Don't re-execute notebooks unless their source changes.
+  # Critical when you have long-running CV or simulation code.
+  # Run `quarto render --execute` to force a full re-run.
+  freeze: auto
+
   # Sensible defaults for computational notebooks
   warning: false
   message: false
