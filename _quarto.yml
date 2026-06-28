@@ -19,6 +19,8 @@ website:
         text: Home
       - href: lab-notebooks/index.qmd
         text: Lab Notebooks
+      - href: "Templates/Lab Notebook Components/Lab Notebook Template.qmd"
+        text: Templates
 
   sidebar:
     style: floating
@@ -27,6 +29,9 @@ website:
       - index.qmd
       - section: "Lab Notebooks"
         contents: lab-notebooks/*.qmd
+      - section: "Templates"
+        contents:
+          - "Templates/Lab Notebook Components/Lab Notebook Template.qmd"
 
   # Footer
   page-footer:
