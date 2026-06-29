@@ -253,6 +253,54 @@ Use **bibliographic trails** (follow citations backward from a useful source) an
 
 <!-- What contradictions, gaps, or incomplete explanations have you found? -->
 
+## Methods
+
+### CV Pipeline
+
+Describe your SAM-based segmentation, morphometric extraction, etc.
+
+::: column-margin
+**Pipeline version:** `v0.3.2`\
+**Last validated:** 2026-06-15
+:::
+
+```{mermaid}
+%%| label: fig-pipeline
+%%| fig-cap: "Image processing pipeline from raw frame to morphometric measurement."
+
+flowchart TD
+    A[Raw frame<br/>RPi camera] --> B[Background subtraction]
+    B --> C[SAM segmentation]
+    C --> D{Mask QC}
+    D -->|pass| E[Morphometric extraction]
+    D -->|fail| F[Manual correction tool]
+    F --> E
+    E --> G[Spline-based length]
+    E --> H[Ellipse-based area]
+    G --> I[(Measurements DB)]
+    H --> I
+```
+
+### Protocol Details
+
+::: column-margin
+Testing column margin stuff
+:::
+
+::: {.callout-caution collapse="true"}
+## Quarto feature: collapsible callouts
+
+Lengthy protocols, equipment lists, or troubleshooting notes can go inside collapsible callouts. The reader sees the header; they expand only if needed. This keeps the page scannable without losing detail.
+
+**Example protocol step:** Aspirate 5 workers from source colony using a modified 15 mL Falcon tube aspirator. Transfer to micronest arena within 30 seconds to minimize stress handling. Confirm 5 workers visually before sealing.
+:::
+
+### Linking to AntSciHub
+
+Reference specific video observations inline:
+
+> The larval secretion event in colony 4, nest 17 was first observed at hour 342. See the raw footage: [AntSciHub link](https://antscihub.org/v/colony04/nest17/t342).
+
 ## Data
 
 ::: {.callout-tip collapse="true"}
@@ -382,54 +430,6 @@ Reference sub-figures individually: @fig-parameter-comparison-1 shows the asympt
 
 You can place content in the page margin with the `.column-margin` class. Useful for side-commentary, small reference figures, or annotation without interrupting the main flow. Add `column: margin` to a code chunk's YAML to push its output to the margin.
 :::
-
-## Methods
-
-### CV Pipeline
-
-Describe your SAM-based segmentation, morphometric extraction, etc.
-
-::: column-margin
-**Pipeline version:** `v0.3.2`\
-**Last validated:** 2026-06-15
-:::
-
-```{mermaid}
-%%| label: fig-pipeline
-%%| fig-cap: "Image processing pipeline from raw frame to morphometric measurement."
-
-flowchart TD
-    A[Raw frame<br/>RPi camera] --> B[Background subtraction]
-    B --> C[SAM segmentation]
-    C --> D{Mask QC}
-    D -->|pass| E[Morphometric extraction]
-    D -->|fail| F[Manual correction tool]
-    F --> E
-    E --> G[Spline-based length]
-    E --> H[Ellipse-based area]
-    G --> I[(Measurements DB)]
-    H --> I
-```
-
-### Protocol Details
-
-::: column-margin
-Testing column margin stuff
-:::
-
-::: {.callout-caution collapse="true"}
-## Quarto feature: collapsible callouts
-
-Lengthy protocols, equipment lists, or troubleshooting notes can go inside collapsible callouts. The reader sees the header; they expand only if needed. This keeps the page scannable without losing detail.
-
-**Example protocol step:** Aspirate 5 workers from source colony using a modified 15 mL Falcon tube aspirator. Transfer to micronest arena within 30 seconds to minimize stress handling. Confirm 5 workers visually before sealing.
-:::
-
-### Linking to AntSciHub
-
-Reference specific video observations inline:
-
-> The larval secretion event in colony 4, nest 17 was first observed at hour 342. See the raw footage: [AntSciHub link](https://antscihub.org/v/colony04/nest17/t342).
 
 ```{=html}
 <!-- ============================================================
