@@ -33,3 +33,17 @@
 #quarto-sidebar .sidebar-item-section > ul .sidebar-item-section > ul .sidebar-item-container {
   padding-left: 1.9rem;
 }
+/* TOC active link polish. */
+.sidebar nav[role="doc-toc"] #toc-title,
+.sidebar nav[role="doc-toc"] .toc-title,
+.sidebar nav[role="doc-toc"] h2,
+.sidebar #TOC #toc-title,
+#quarto-toc-toggle > .quarto-sidebar-toggle-title {
+  display: none !important;
+}
+
+.sidebar nav[role="doc-toc"] a.active,
+.sidebar #TOC a.active {
+  background-color: #ededed;
+  border-radius: 4px;
+}
