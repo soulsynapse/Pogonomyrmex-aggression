@@ -5,3 +5,5 @@ title: "AntSciHub"
 Welcome to AntSciHub v4
 
 Currently trying this out as a pilot for a lab notebook setup. Please excuse the dust 🏗️
+
+# Templates
