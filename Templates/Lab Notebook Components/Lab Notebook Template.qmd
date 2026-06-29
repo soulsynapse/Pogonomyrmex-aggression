@@ -1,14 +1,15 @@
 ---
+wh---
 title: "Lab Notebook Template"
-subtitle: "Micronest time-lapse experiment"
-author: "Kendrick"
+subtitle: "A subtitle for your project."
+author: "Your Name Here"
 
 # -- Page behavior --
 toc: true
 toc-depth: 3
 number-sections: false
 code-fold: true          # all code chunks collapsed by default; reader can expand
-code-tools: false          # hide the global code tools menu
+code-tools: false        # hide the global code tools menu
 fig-align: center
 execute:
   freeze: true           # only re-run when you explicitly render this page
@@ -207,7 +208,6 @@ Lengthy protocols, equipment lists, or troubleshooting notes can go inside colla
 Reference specific video observations inline:
 
 > The larval secretion event in colony 4, nest 17 was first observed at hour 342. See the raw footage: [AntSciHub link](https://antscihub.org/v/colony04/nest17/t342).
-
 ::::::::
 
 ```{=html}
