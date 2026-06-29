@@ -47,3 +47,7 @@
   background-color: #ededed;
   border-radius: 4px;
 }
+
+body.template-no-site-links #quarto-sidebar .sidebar-menu-container {
+  display: none;
+}
