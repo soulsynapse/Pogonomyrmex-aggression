@@ -36,8 +36,9 @@
 @media (min-width: 992px) {
   body.docked #quarto-content.page-columns {
     --ash-site-nav-width: 190px;
-    --ash-page-toc-width: clamp(7.5rem, 10vw, 9.5rem);
-    --ash-body-width: minmax(0, min(1020px, calc(100vw - var(--ash-site-nav-width) - var(--ash-page-toc-width) - 17rem)));
+    --ash-toc-left-gap: 0.75rem;
+    --ash-page-toc-width: clamp(7.5rem, 10vw, 9.75rem);
+    --ash-body-width: minmax(0, min(1100px, calc(100vw - var(--ash-site-nav-width) - var(--ash-toc-left-gap) - var(--ash-page-toc-width) - 17rem)));
     --ash-margin-note-width: minmax(10rem, 15rem);
     display: grid !important;
     gap: 0;
@@ -45,8 +46,9 @@
     width: 100%;
     grid-template-columns:
       [screen-start] var(--ash-site-nav-width)
-      [screen-start-inset page-start page-start-inset body-start-outset] var(--ash-page-toc-width)
-      [body-start] 0.75rem
+      [screen-start-inset] var(--ash-toc-left-gap)
+      [page-start page-start-inset body-start-outset] var(--ash-page-toc-width)
+      [body-start] 1rem
       [body-content-start] var(--ash-body-width)
       [body-content-end] 1rem
       [body-end] 0
@@ -66,7 +68,7 @@
 
   body.docked #quarto-margin-sidebar {
     box-sizing: border-box;
-    grid-column: screen-start-inset / body-start !important;
+    grid-column: page-start / body-start !important;
     max-width: none;
     min-width: 0;
     padding-left: 0;
@@ -75,6 +77,13 @@
     z-index: 5;
   }
 
+
+  /* Hide the default "On this page" heading; the TOC entries themselves are enough here. */
+  body.docked #quarto-margin-sidebar .toc-title,
+  body.docked #quarto-margin-sidebar #toc-title,
+  body.docked #quarto-margin-sidebar .sidebar-title {
+    display: none !important;
+  }
   body.docked #quarto-content.page-columns > .content,
   body.docked #quarto-document-content {
     grid-column: body-content-start / body-content-end !important;
@@ -95,7 +104,8 @@
 @supports selector(:has(*)) {
   @media (min-width: 992px) {
     body.docked #quarto-content.page-columns:has(.column-margin) {
-      --ash-page-toc-width: clamp(7.5rem, 10vw, 9.5rem);
+      --ash-toc-left-gap: 0.75rem;
+      --ash-page-toc-width: clamp(7.5rem, 10vw, 9.75rem);
     }
 
     body.docked #quarto-content.page-columns:has(.column-margin) #quarto-margin-sidebar,
@@ -107,7 +117,7 @@
     }
 
     body.docked #quarto-content.page-columns:has(.column-margin) #quarto-margin-sidebar {
-      grid-column: screen-start-inset / body-start !important;
+      grid-column: page-start / body-start !important;
       min-width: 0;
       width: auto;
     }
