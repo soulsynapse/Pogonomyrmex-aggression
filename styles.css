@@ -1,15 +1,30 @@
 /* Give child pages in the left sidebar a clearer visual indent. */
 #quarto-sidebar .sidebar-item {
-  margin-block: 0.15rem;
+  margin-block: 0.3rem;
 }
 
 #quarto-sidebar .sidebar-item-section {
-  margin-block: 0.35rem;
+  margin-block: 0.55rem;
 }
 
 #quarto-sidebar .sidebar-item-container {
   line-height: 1.35;
-  padding-block: 0.1rem;
+  padding-block: 0.18rem;
+}
+
+#quarto-sidebar .sidebar-item-container > .sidebar-item-text,
+#quarto-sidebar .sidebar-item-container > a {
+  opacity: 0.72;
+  transition: opacity 160ms ease;
+}
+
+#quarto-sidebar .sidebar-item-container:hover > .sidebar-item-text,
+#quarto-sidebar .sidebar-item-container:hover > a,
+#quarto-sidebar .sidebar-item-container:focus-within > .sidebar-item-text,
+#quarto-sidebar .sidebar-item-container:focus-within > a,
+#quarto-sidebar .sidebar-item-container > .sidebar-item-text.active,
+#quarto-sidebar .sidebar-item-container > a.active {
+  opacity: 1;
 }
 #quarto-sidebar .sidebar-item-section > ul .sidebar-item-container {
   padding-left: 1.15rem;
