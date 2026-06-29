@@ -109,13 +109,26 @@
   }
   body.docked #quarto-content.page-columns > .content,
   body.docked #quarto-document-content {
-    grid-column: body-content-start / body-content-end !important;
+    grid-column: body-content-start / page-end-inset !important;
     max-width: none;
     min-width: 0;
     width: 100%;
   }
 
-  body.docked .page-columns .column-margin {
+
+  /* Flatten the nested document grid so text uses the full body track and
+     margin notes live in the explicit right rail instead of inside the text. */
+  body.docked #quarto-document-content.page-columns {
+    display: grid;
+    grid-template-columns:
+      [screen-start screen-start-inset page-start page-start-inset body-start-outset body-start body-content-start] var(--ash-body-width)
+      [body-content-end] 1rem
+      [body-end] 0
+      [body-end-outset] var(--ash-margin-note-width)
+      [page-end-inset page-end screen-end-inset screen-end] minmax(0, 1fr) !important;
+  }
+
+  body.docked #quarto-document-content.page-columns .column-margin {
     grid-column: body-end-outset / page-end-inset !important;
     max-width: none;
     width: auto !important;
