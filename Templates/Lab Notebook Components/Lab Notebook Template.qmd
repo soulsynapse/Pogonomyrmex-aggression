@@ -1,5 +1,4 @@
 ---
-wh---
 title: "Lab Notebook Template"
 subtitle: "A subtitle for your project."
 author: "Firstname Lastname"
