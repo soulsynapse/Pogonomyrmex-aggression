@@ -11,7 +11,7 @@ listing:
     filter-ui: false
 ---
 
-## Fewell/Gadau Pogonomyrmex Aggression Experiments 2026
+# Fewell/Gadau Pogonomyrmex Aggression Experiments 2026
 
 ## Hourly images
 
