@@ -17,6 +17,20 @@ Very much WIP. Please excuse the dust 🏗️
 
 {{< include front-page/_what-is-antscihub.qmd >}}
 
+## Experiment images
+
+The image gallery below is loaded directly from the experiment's shared Google
+Drive folder. New images will appear here without requiring a site rebuild.
+
+<iframe
+  src="https://drive.google.com/embeddedfolderview?id=1_FTjq9eCrMPpMv7LBHbXa2w8Y6Adnxjn#grid"
+  title="Pogonomyrmex experiment images"
+  loading="lazy"
+  style="width: 100%; height: 75vh; min-height: 32rem; border: 1px solid var(--bs-border-color); border-radius: 0.375rem;"
+></iframe>
+
+[Open the image folder in Google Drive](https://drive.google.com/drive/folders/1_FTjq9eCrMPpMv7LBHbXa2w8Y6Adnxjn){target="_blank"}
+
 ## Templates
 
 These templates are maintained as reusable Quarto starting points.
