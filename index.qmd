@@ -15,24 +15,8 @@ listing:
 
 ## Hourly images
 
-Images are added hourly from the experiment's shared Google Drive folder.
+Images are added hourly from the experiment's shared Google Drive folder. [Open the full gallery in Google Drive](https://drive.google.com/drive/folders/1_FTjq9eCrMPpMv7LBHbXa2w8Y6Adnxjn){target="_blank"}
 
-**Newest first:** In the gallery's sort menu, select **Modified** and descending
-order. Google Drive remembers the selected view for each visitor.
+<iframe src="https://drive.google.com/embeddedfolderview?id=1_FTjq9eCrMPpMv7LBHbXa2w8Y6Adnxjn#grid" title="Hourly Pogonomyrmex experiment images" loading="eager" width="100%" height="720">
 
-<iframe
-  src="https://drive.google.com/embeddedfolderview?id=1_FTjq9eCrMPpMv7LBHbXa2w8Y6Adnxjn#grid"
-  title="Hourly Pogonomyrmex experiment images"
-  loading="eager"
-  width="100%"
-  height="720"
-></iframe>
-
-[Open the full gallery in Google Drive](https://drive.google.com/drive/folders/1_FTjq9eCrMPpMv7LBHbXa2w8Y6Adnxjn){target="_blank"}
-
-## Templates
-
-These templates are maintained as reusable Quarto starting points.
-
-::: {#templates-list}
-:::
+</iframe>
